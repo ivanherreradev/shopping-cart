@@ -1,10 +1,11 @@
+import { CartProvider } from './context/CartContext'
 import Home from './pages/Home/Home'
 
 function App () {
   return (
-    <div>
+    <CartProvider>
       <Home/>
-    </div>
+    </CartProvider>
   )
 }
 
