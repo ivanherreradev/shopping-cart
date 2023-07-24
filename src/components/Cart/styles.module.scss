@@ -1,0 +1,39 @@
+.cart {
+  width: 100vw;
+  height: 50px;
+  display: flex;
+  justify-content: flex-end;
+  margin: 30px;
+
+  .buttonCardContainer {
+    position: absolute;
+    margin-right: 60px;
+    cursor: pointer;
+    z-index: 2;
+
+    .buttonCard {
+      background-color: #222222;
+      width: 65px;
+      height: 65px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 100%;
+    }
+
+    .productsNumber {
+      height: 25px;
+      width: 25px;
+      border-radius: 100%;
+      position: absolute;
+      top: 0;
+      right: 0;
+      background-color: #fb3939;
+      color: #F0F0F0;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
