@@ -79,11 +79,13 @@ export const CartProvider = ({ children }) => {
       )
     } else {
       // If the quantity is greater than 1, decrease the quantity by 1.
-      setCartItems((productInCart) => {
-        if (productInCart.id === product.id) {
-          return { ...inCart, amount: inCart.amount - 1 }
-        } else return productInCart
-      })
+      setCartItems(
+        cartItems.map((productInCart) => {
+          if (productInCart.id === product.id) {
+            return { ...inCart, amount: inCart.amount - 1 }
+          } else return productInCart
+        })
+      )
     }
   }
 
