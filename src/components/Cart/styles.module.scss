@@ -7,7 +7,6 @@
 
   .buttonCardContainer {
     position: absolute;
-    margin-right: 60px;
     cursor: pointer;
     z-index: 2;
 
@@ -40,7 +39,6 @@
   .openCart {
     position: absolute;
     border-radius: 30px;
-    margin-right: 50px;
     width: 300px;
     background-color: #222222;
     color: white;
@@ -82,4 +80,31 @@
 ::-webkit-scrollbar-thumb {
   background-color: #797979;
   border-radius: 20px;
+}
+
+@media screen and (min-width: 993px) {
+  .buttonCardContainer {
+    margin-right: 60px;
+  }
+  .openCart {
+    margin-right: 50px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .buttonCardContainer {
+    margin-right: 40px;
+  }
+  .openCart {
+    margin-right: 30px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .buttonCardContainer {
+    margin-right: 20px;
+  }
+  .openCart {
+    margin-right: 10px;
+  }
 }
